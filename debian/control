@@ -15,9 +15,10 @@ Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.ne
 Uploaders:
  nicoo <nicoo@debian.org>,
  Wolfgang Silbermayr <wolfgang@silbermayr.at>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Vcs-Git: https://salsa.debian.org/rust-team/debcargo-conf.git [src/syn]
 Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/syn
+X-Cargo-Crate: syn
 Rules-Requires-Root: no
 
 Package: librust-syn-dev
@@ -69,19 +70,19 @@ Provides:
  librust-syn-1.0+quote-dev (= ${binary:Version}),
  librust-syn-1.0+visit-dev (= ${binary:Version}),
  librust-syn-1.0+visit-mut-dev (= ${binary:Version}),
- librust-syn-1.0.103-dev (= ${binary:Version}),
- librust-syn-1.0.103+clone-impls-dev (= ${binary:Version}),
- librust-syn-1.0.103+default-dev (= ${binary:Version}),
- librust-syn-1.0.103+derive-dev (= ${binary:Version}),
- librust-syn-1.0.103+extra-traits-dev (= ${binary:Version}),
- librust-syn-1.0.103+fold-dev (= ${binary:Version}),
- librust-syn-1.0.103+full-dev (= ${binary:Version}),
- librust-syn-1.0.103+parsing-dev (= ${binary:Version}),
- librust-syn-1.0.103+printing-dev (= ${binary:Version}),
- librust-syn-1.0.103+proc-macro-dev (= ${binary:Version}),
- librust-syn-1.0.103+quote-dev (= ${binary:Version}),
- librust-syn-1.0.103+visit-dev (= ${binary:Version}),
- librust-syn-1.0.103+visit-mut-dev (= ${binary:Version})
+ librust-syn-1.0.107-dev (= ${binary:Version}),
+ librust-syn-1.0.107+clone-impls-dev (= ${binary:Version}),
+ librust-syn-1.0.107+default-dev (= ${binary:Version}),
+ librust-syn-1.0.107+derive-dev (= ${binary:Version}),
+ librust-syn-1.0.107+extra-traits-dev (= ${binary:Version}),
+ librust-syn-1.0.107+fold-dev (= ${binary:Version}),
+ librust-syn-1.0.107+full-dev (= ${binary:Version}),
+ librust-syn-1.0.107+parsing-dev (= ${binary:Version}),
+ librust-syn-1.0.107+printing-dev (= ${binary:Version}),
+ librust-syn-1.0.107+proc-macro-dev (= ${binary:Version}),
+ librust-syn-1.0.107+quote-dev (= ${binary:Version}),
+ librust-syn-1.0.107+visit-dev (= ${binary:Version}),
+ librust-syn-1.0.107+visit-mut-dev (= ${binary:Version})
 Description: Parser for Rust source code - Rust source code
  This package contains the source for the Rust syn crate, packaged by debcargo
  for use with cargo and dh-cargo.
