@@ -1,3 +1,9 @@
+rust-syn (1.0.107-1pexip1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Huw Jones <huw@pexip.com>  Thu, 16 Mar 2023 18:00:21 +0000
+
 rust-syn (1.0.107-1) unstable; urgency=medium
 
   * Team upload.
