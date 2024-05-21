@@ -1,3 +1,9 @@
+rust-syn (2.0.48-1+pexip24u1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Huw Jones <huw@pexip.com>  Tue, 21 May 2024 10:51:03 +0100
+
 rust-syn (2.0.48-1) unstable; urgency=medium
 
   * Team upload.
