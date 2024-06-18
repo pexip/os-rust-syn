@@ -56,7 +56,7 @@ impl TokenBuffer {
     /// Creates a `TokenBuffer` containing all the tokens from the input
     /// `proc_macro::TokenStream`.
     #[cfg(feature = "proc-macro")]
-    #[cfg_attr(doc_cfg, doc(cfg(feature = "proc-macro")))]
+    #[cfg_attr(docsrs, doc(cfg(feature = "proc-macro")))]
     pub fn new(stream: proc_macro::TokenStream) -> Self {
         Self::new2(stream.into())
     }
@@ -346,11 +346,13 @@ impl<'a> Cursor<'a> {
         self.span()
     }
 
-    /// Skip over the next token without cloning it. Returns `None` if this
-    /// cursor points to eof.
+    /// Skip over the next token that is not a None-delimited group, without
+    /// cloning it. Returns `None` if this cursor points to eof.
     ///
     /// This method treats `'lifetimes` as a single token.
-    pub(crate) fn skip(self) -> Option<Cursor<'a>> {
+    pub(crate) fn skip(mut self) -> Option<Cursor<'a>> {
+        self.ignore_none();
+
         let len = match self.entry() {
             Entry::End(_) => return None,
 
